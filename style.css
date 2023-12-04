@@ -1,0 +1,163 @@
+* {
+    
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+    color:white;
+    padding: 0px;
+    margin: 0px;
+    
+}
+
+h1 {
+    margin-left: 30px;
+    animation: entrance;
+    animation-duration: 1s;
+    font-family: 'Kaushan Script', cursive;
+    color:#ffc83d;
+}
+
+.hcontainer {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hamburger {
+    width:40px;
+    height: 5px;
+    background-color:#ffc83d;
+    margin: 5px;
+    margin-right:15px;
+}
+
+.main {
+    display: block;
+
+}
+
+
+.image img{
+    max-width: 350px;
+    margin-top: -50px;
+    animation: entrance;
+    animation-duration: 1s;
+   
+}
+
+
+
+
+
+.hello {
+    margin-left:30px;
+    margin-top: -50px;
+    animation: entrance;
+    animation-duration: 1s;
+    color:white;
+}
+
+.name {
+    margin-left:30px;
+    animation: entrance;
+    animation-duration: 1s;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'PT Mono', monospaces;
+}
+
+.middle h5{
+    margin-left: 30px;
+    font-weight: 300;
+}
+
+::-webkit-scrollbar {
+    width: 9px;
+}
+
+::-webkit-scrollbar-track {
+    width: 7px;
+    background-color: rgb(15, 15, 15);
+}
+
+::-webkit-scrollbar-thumb {
+    width: 4px;
+    background-color: #ffc83d;
+    border-radius: 4px;
+}
+
+@keyframes entrance {
+    0% {
+        top: 90%;
+        opacity: 0;
+    }
+
+
+    100% {
+        top: 30%;
+        opacity: 1;
+    }
+
+}
+
+.btn {
+    margin-left: 30px;
+    padding: 8px 20px;
+    cursor: pointer;
+    border: 3px solid #ffc83d;
+    font-size: 25px;
+    background-color: black;
+    color:white;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 4px 4px 0 0 black,
+    6px 6px 0 0 #ffc83d;
+    transition-duration: 200ms;
+}
+
+.btn:hover {
+    box-shadow: 5px 5px  black,
+    8px 8px 0 0 #ffc83d;
+    transform: translate(-2px, -2px);
+}
+
+.social {
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.about h1 {
+    text-align: center;
+    
+}
+
+.about h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    margin-left: 20px;
+    padding: 20px;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .main {
+        display: flex;
+
+    
+    }
+
+    .middle {
+        margin-top: 150px;
+        margin-left: 50px;
+    }
+
+    .about {
+        margin-top: -100px;
+    }
+
+    .hamburger {
+        display: none;
+    }
+}
