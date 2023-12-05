@@ -48,10 +48,6 @@ h1 {
    
 }
 
-
-
-
-
 .hello {
     margin-left:30px;
     margin-top: -50px;
@@ -71,6 +67,42 @@ h1 {
 .middle h5{
     margin-left: 30px;
     font-weight: 300;
+}
+
+.exp h3, h4{
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 300;
+    text-align: center;
+    
+}
+
+.exp img{
+    display: block;
+    margin: auto;
+}
+
+.exp {
+    border: 2px solid #ffc83d;
+    padding:10px;
+    margin:20px;
+}
+
+.edu h3, h4{
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 300;
+    text-align: center;
+    
+}
+
+.edu img{
+    display: block;
+    margin: auto;
+}
+
+.edu {
+    border: 2px solid #ffc83d;
+    padding:10px;
+    margin:20px;
 }
 
 ::-webkit-scrollbar {
@@ -159,5 +191,10 @@ h1 {
 
     .hamburger {
         display: none;
+    }
+
+    .boxes {
+        display:flex;
+        justify-content: center;
     }
 }
