@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: black;
+    background-color: #131316;
     color:white;
     padding: 0px;
     margin: 0px;
@@ -83,16 +83,16 @@ h1 {
     cursor: pointer;
     border: 3px solid #ffc83d;
     font-size: 25px;
-    background-color: black;
+    background-color: #131316;
     color:white;
     font-family: 'Poppins', sans-serif;
-    box-shadow: 4px 4px 0 0 black,
+    box-shadow: 4px 4px 0 0 #131316,
     6px 6px 0 0 #ffc83d;
     transition-duration: 200ms;
 }
 
 .btn:hover {
-    box-shadow: 5px 5px  black,
+    box-shadow: 5px 5px  #131316,
     8px 8px 0 0 #ffc83d;
     transform: translate(-2px, -2px);
 }
@@ -102,9 +102,11 @@ h1 {
     margin-top: 30px;
 }
 
+
+
 .about h1 {
     text-align: center;
-    
+    margin-top: 90px;
 }
 
 .about h2 {
@@ -158,6 +160,10 @@ h1 {
     justify-content: space-evenly;
 }
 
+.projects h1 {
+    margin-top: 0px;
+}
+
 .project {
     border: 2px solid #ffc83d;
     padding:10px;
@@ -173,25 +179,29 @@ h1 {
 }
 
 .pbtn {
-    margin-top: 30px;
-    margin-left: 45px;
-    margin-bottom: 15px;
+    margin:auto;
     padding: 8px 20px;
     cursor: pointer;
     border: 3px solid #ffc83d;
     font-size: 25px;
-    background-color: black;
+    background-color: #131316;
     color:white;
     font-family: 'Poppins', sans-serif;
-    box-shadow: 4px 4px 0 0 black,
+    box-shadow: 4px 4px 0 0 #131316,
     6px 6px 0 0 #ffc83d;
     transition-duration: 200ms;
 }
 
 .pbtn:hover {
-    box-shadow: 5px 5px  black,
+    box-shadow: 5px 5px  #131316,
     8px 8px 0 0 #ffc83d;
     transform: translate(-2px, -2px);
+}
+
+.probtns {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 ::-webkit-scrollbar {
@@ -223,8 +233,58 @@ h1 {
 
 }
 
+@media(prefers-reduced-motion){
+    .hidden{
+        transition: none;
+    }
+}
 
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform:translateX(-100%);
+    transition: all 1s;
+}
 
+.show {
+    opacity:1;
+    filter:blur(0);
+    transform:translateX(0);
+}
+
+.btn:nth-child(2){
+    transition-delay: 200ms;
+}
+
+.pbtn:nth-child(2){
+    transition-delay:200ms;
+}
+
+.box1:nth-child(2){
+    transition-delay: 200ms;
+}
+.box1:nth-child(3){
+    transition-delay: 400ms;
+}
+.box1:nth-child(4){
+    transition-delay: 600ms;
+}
+
+.box2:nth-child(2){
+    transition-delay: 200ms;
+}
+.box2:nth-child(3){
+    transition-delay: 400ms;
+}
+.box2:nth-child(4){
+    transition-delay: 600ms;
+}
+.box2:nth-child(5){
+    transition-delay: 800ms;
+}
+.box2:nth-child(6){
+    transition-delay: 1000ms;
+}
 
 @media only screen and (min-width: 768px) {
     .main {
@@ -258,6 +318,13 @@ h1 {
     }
     .projectss {
         display:flex;
+        max-width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
 
+    }
+
+    .project{
+        flex-basis: 30%;
     }
 }
