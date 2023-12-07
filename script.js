@@ -1,6 +1,6 @@
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-        console.log(entry)
+        
         if (entry.isIntersecting) {
             entry.target.classList.add('show');
         }else {
@@ -28,3 +28,25 @@ let typed = new Typed('.element', {
   loopCount: Infinity
 
   });
+
+const burgers = document.querySelector(".burgers")
+const burgermenu = document.querySelector(".burgermenu")
+const menu = document.querySelector(".menu") 
+
+burgers.addEventListener('click', ()=> {
+    
+
+        if(burgermenu.style.display == "none"){
+            burgermenu.style.display = "block";
+            
+        }else{
+            burgermenu.style.display = "none";
+            
+        }
+})
+
+menu.addEventListener('click', ()=> {
+    burgermenu.style.display = "none"
+})
+
+  

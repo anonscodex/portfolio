@@ -30,12 +30,48 @@ h1 {
     margin-left: 30px;
 }
 
+.menu {
+    display: block;
+    margin-top:20px;
+    margin-left:50px;
+}
+
+.menu a {
+    margin:20px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Poppins', sans-serif ;
+    font-size: 2.1rem;
+    font-weight: 400;
+    z-index: 1;
+    display: block;
+    line-height: 65px;
+}
+
+.menu a:hover {
+    transition: 0.4s ease-in;
+    
+}
+
 .hamburger {
     width:40px;
     height: 5px;
     background-color:#ffc83d;
     margin: 5px;
     margin-right:15px;
+}
+
+
+.burgermenu {
+    width:250px;
+    height: 50vh;
+    background-color: #131316;
+    opacity: 0.5;
+    position: absolute;
+    margin-left: 180px;
+    z-index: 1;
+    display: none;
+    top: 70px;
 }
 
 .main {
@@ -160,8 +196,22 @@ h1 {
     justify-content: space-evenly;
 }
 
+.tool h1{
+    margin-top: 90px;
+    text-align: center;
+}
+
 .projects h1 {
-    margin-top: 0px;
+    margin-top: 90px;
+    text-align: center;
+}
+
+.projects h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    margin-left: 20px;
+    padding: 20px;
 }
 
 .project {
@@ -287,9 +337,46 @@ h1 {
 }
 
 @media only screen and (min-width: 768px) {
+    .menu {
+        display:flex;
+    }
+
+    .burgermenu {
+        
+    
+    background-color: #131316;
+    opacity: 0.5;
+    position: absolute;
+    margin-left: 180px;
+    z-index: 1;
+    display: block;
+    top: 30px;
+    }
+
+    .menu a {
+        margin: 50px 0;
+        text-decoration: none;
+        color: #ffc83d;
+        font-family: 'Poppins', sans-serif ;
+        font-size: 1.1rem;
+        font-weight: 400;
+        line-height: 0;
+    }
+    
+    .menu a:hover {
+        transition: 0.4s ease-in;
+        font-weight: 600;
+    }
+    
+    .hcontainer{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
     .main {
         display: flex;
-
+        
     
     }
 
