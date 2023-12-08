@@ -74,6 +74,10 @@ h1 {
     top: 70px;
 }
 
+.burgermenu2 {
+    display:none;
+}
+
 .main {
     display: block;
 
@@ -339,28 +343,36 @@ h1 {
 @media only screen and (min-width: 768px) {
     .menu {
         display:flex;
+       
     }
 
     .burgermenu {
-        
-    
     background-color: #131316;
     opacity: 0.5;
     position: absolute;
     margin-left: 180px;
     z-index: 1;
-    display: block;
+    display: none;
     top: 30px;
     }
 
-    .menu a {
-        margin: 50px 0;
+    .burgermenu2 {
+        display: flex;
+    }
+
+    .menu2 {
+        display: flex;;
+    }
+
+    .menu2 a {
+        margin: 50px;
         text-decoration: none;
         color: #ffc83d;
         font-family: 'Poppins', sans-serif ;
         font-size: 1.1rem;
         font-weight: 400;
         line-height: 0;
+        display: flex;
     }
     
     .menu a:hover {
@@ -376,7 +388,7 @@ h1 {
     }
     .main {
         display: flex;
-        
+        margin-top:-50px;
     
     }
 
