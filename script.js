@@ -32,11 +32,13 @@ let typed = new Typed('.element', {
 const burgers = document.querySelector(".burgers")
 const burgermenu = document.querySelector(".burgermenu")
 const menu = document.querySelector(".menu") 
+const morebtn = document.querySelector(".morebtn")
+const more = document.querySelectorAll('.more')
 
 burgers.addEventListener('click', ()=> {
     
 
-        if(burgermenu.style.display == "none"){
+        if(burgermenu.style.display === "none"){
             burgermenu.style.display = "block";
             
         }else{
@@ -49,4 +51,21 @@ menu.addEventListener('click', ()=> {
     burgermenu.style.display = "none"
 })
 
+const showmore = ()=> {
+    more;
+    more.forEach(mor => {
+        mor.style.display = (mor.style.display === 'block') ? 'none'  : 'block' ;
+        //morebtn.innerHTML === 'More Project' ? morebtn.innerHTML = 'Less Projects': morebtn.innerHTML = 'Less Projects';
+    });
+}
+
+morebtn.addEventListener('click', showmore);
+
+morebtn.addEventListener('click', ()=> {
+    if(morebtn.innerHTML === 'More Projects'){
+        morebtn.innerHTML = "Less Projects"
+    }else{
+        morebtn.innerHTML = "More Projects"
+    }
+});
   

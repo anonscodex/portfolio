@@ -43,9 +43,10 @@ h1 {
     font-family: 'Poppins', sans-serif ;
     font-size: 2.1rem;
     font-weight: 400;
-    z-index: 1;
+    z-index: 2;
     display: block;
     line-height: 65px;
+    opacity:1;
 }
 
 .menu a:hover {
@@ -232,6 +233,10 @@ h1 {
     width: 75%;
 }
 
+.more {
+    display :none;
+}
+
 .pbtn {
     margin:auto;
     padding: 8px 20px;
@@ -256,6 +261,28 @@ h1 {
     display: flex;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.morebtn {
+    margin: auto;
+    padding: 8px 20px;
+    cursor: pointer;
+    border: 3px solid #ffc83d;
+    font-size: 25px;
+    background-color: #131316;
+    color:white;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 4px 4px 0 0 #131316,
+    6px 6px 0 0 #ffc83d;
+    transition-duration: 200ms;
+    margin-top: 30px;
+    display: flex;
+}
+
+.morebtn:hover {
+    box-shadow: 5px 5px  #131316,
+    8px 8px 0 0 #ffc83d;
+    transform: translate(-2px, -2px);
 }
 
 ::-webkit-scrollbar {
@@ -370,9 +397,10 @@ h1 {
         color: #ffc83d;
         font-family: 'Poppins', sans-serif ;
         font-size: 1.1rem;
-        font-weight: 400;
+        font-weight: 600;
         line-height: 0;
         display: flex;
+        margin-top:10px;
     }
     
     .menu a:hover {
