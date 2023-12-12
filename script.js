@@ -15,7 +15,6 @@ const observer = new IntersectionObserver((entries) => {
 const hiddenElements = document.querySelectorAll('.hidden')
 hiddenElements.forEach((el) => observer.observe(el));
 
-var x;
 
 let typed = new Typed('.element', {
     strings: ['  ', 'Yusuf Abdullah Ayomide', 'a Frontend Developer', 'a Graphic Designer'],
